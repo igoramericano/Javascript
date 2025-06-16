@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+<ol>
+    <h1>🧮 Operadores em JavaScript</h1>
+        <div>
+            <strong>Aritméticos:</strong>
+            <ul>
+                <li>+ (adição), - (subtração), * (multiplicação), / (divisão), % (módulo)</li>
+                <li>** (exponenciação), ++ (incremento), -- (decremento)
+            </ul>
+        </div>
+        <script>
+            // Exemplos de operadores aritméticos
+    
+          let a = 10;
+          let b = 3;
+    
+          console.log("Soma: " + (a + b));        // 13
+          console.log("Subtração: " + (a - b));   // 7
+          console.log("Multiplicação: " + (a * b)); // 30
+          console.log("Divisão: " + (a / b));     // 3.333...
+          console.log("Módulo (resto): " + (a % b)); // 1
+          console.log("Exponenciação: " + (a ** b)); // 1000
+    
+          // Incremento e Decremento
+          let x = 5;
+          x++; // mesmo que x = x + 1
+          console.log("Incremento: " + x); // 6
+    
+          x--; // mesmo que x = x - 1
+          console.log("Decremento: " + x); // 5
+        </script>
+    
+    
+        <div>
+            <strong>Atribuição:</strong>
+            <ul>
+                <li>= (atribuição simples)</li>
+                <li>+=, -=, *=, /=, %= (atribuição com operação)</li>
+                <li>Ex: x += 2 é o mesmo que x = x + 2</li>
+            </ul>
+        </div>
+        <script>
+          let x = 10;
+    
+          console.log("Valor inicial: " + x); // 10
+    
+          x += 5;  // x = x + 5
+          console.log("Após += 5: " + x); // 15
+    
+          x -= 3;  // x = x - 3
+          console.log("Após -= 3: " + x); // 12
+    
+          x *= 2;  // x = x * 2
+          console.log("Após *= 2: " + x); // 24
+    
+          x /= 4;  // x = x / 4
+          console.log("Após /= 4: " + x); // 6
+    
+          x %= 4;  // x = x % 4
+          console.log("Após %= 4: " + x); // 2
+    
+          x **= 3; // x = x ** 3
+          console.log("Após **= 3: " + x); // 8
+        </script>
+    
+        <div>
+            <strong>Relacionais:</strong>
+                <ul>
+                    <li>&gt;, &lt;, &gt;=, &lt;=, == (igualdade), != (diferente)</li>
+                    <li>=== (igualdade estrita - mesmo valor e tipo)</li>
+                    <li>!== (diferença estrita)</li>
+                </ul>
+        </div>
+        <script>
+          let a = 10;
+          let b = 5;
+          let c = "10";
+    
+          console.log("a > b:", a > b);      // true
+          console.log("a < b:", a < b);      // false
+          console.log("a >= 10:", a >= 10);  // true
+          console.log("b <= 5:", b <= 5);    // true
+    
+          // Igualdade (com e sem tipo)
+          console.log("a == c:", a == c);    // true (só compara valor)
+          console.log("a === c:", a === c);  // false (valor igual, mas tipos   diferentes)
+    
+          // Diferença (com e sem tipo)
+          console.log("a != c:", a != c);    // false
+          console.log("a !== c:", a !== c);  // true
+        </script>
+        <div>
+            <strong>Lógicos:</strong>
+                <ul>
+                    <li>&amp;&amp; (E): true se ambas condições forem verdadeiras</li>
+                    <li>|| (OU): true se pelo menos uma condição for verdadeira</li>
+                    <li>! (NÃO): inverte o valor lógico</li>
+                </ul>
+        </div>
+            <script>
+          let idade = 20;
+          let temCarteira = true;
+          let dormiuBem = false;
+    
+         // AND (&&) - verdadeiro se as duas forem verdadeiras
+         console.log("Pode dirigir?", idade >= 18 && temCarteira); // true
+    
+         // OR (||) - verdadeiro se pelo menos uma for verdadeira
+         console.log("Vai trabalhar bem?", dormiuBem || idade < 25); // true
+    
+         // NOT (!) - inverte o valor
+         console.log("Está cansado?", !dormiuBem); // true
+    
+         // Exemplo prático:
+         let logado = true;
+          let admin = false;
+    
+          console.log("Tem acesso ao painel?", logado && admin); // false
+        </script>
+        <li>
+            <strong>Ternário:</strong>
+            <ul>
+                <li>Sintaxe: condição ? valor1 : valor2</li>
+                <li>Exemplo: idade &gt;= 18 ? "Adulto" : "Menor"</li>
+            </ul>
+        </li>
+        <script>
+         let idade = 17;
+    
+         // Operador ternário: condição ? valorSeVerdadeiro : valorSeFalso
+         let status = idade >= 18 ? "Maior de idade" : "Menor de idade";
+    
+         console.log(status); // Menor de idade
+    
+         // Outro exemplo:
+         let nota = 7;
+         let resultado = nota >= 6 ? "Aprovado" : "Reprovado";
+    
+         console.log("Resultado:", resultado); // Aprovado
+    
+         // Exemplo com booleano
+         let logado = false;
+         let mensagem = logado ? "Bem-vindo!" : "Faça login.";
+    
+         console.log(mensagem); // Faça login.
+        </script>
+        Incrementadores em JavaScript:
+    
+      ++ (incremento) e -- (decremento) aumentam ou diminuem o valor em 1.
+    
+      Pós-incremento (x++): usa o valor atual, depois incrementa.
+      Pré-incremento (++x): incrementa primeiro, depois usa o valor.
+    
+      Pós-decremento (x--): usa o valor atual, depois decrementa.
+      Pré-decremento (--x): decrementa primeiro, depois usa o valor.
+    
+        <script>
+          let num = 10;
+    
+          console.log("Inicial:", num);         // 10
+    
+          console.log("Pós-incremento:", num++); // 10 (usa antes de aumentar)
+         console.log("Depois do pós-incremento:", num); // 11
+    
+         console.log("Pré-incremento:", ++num);  // 12 (aumenta antes de usar)
+         console.log("Após pré-incremento:", num); // 12
+    
+         console.log("Pós-decremento:", num--);  // 12 (usa antes de diminuir)
+         console.log("Após pós-decremento:", num); // 11
+    
+          console.log("Pré-decremento:", --num);  // 10 (diminui antes de usar)
+          console.log("Após pré-decremento:", num); // 10
+        </script>
+</ol>
+</html>
