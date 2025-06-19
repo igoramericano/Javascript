@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area{
+            background: green;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+            height: 200px;
+            width: 200px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        #area:hover{
+            background: rgb(0, 255, 255);
+            color: #000000;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1.4em;
+            height: 200px;
+            width: 200px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        body{
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()">Interaja</div>
+    
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('Click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+            a.innerText = 'Clicou'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu'
+        }
+    </script>
+    
+    <p>
+    🔹 Eventos de Mouse: <br>
+    click        → quando o usuário clica no elemento <br>
+    mouseover    → quando o mouse passa por cima <br>
+    mouseout     → quando o mouse sai do elemento <br> <br>
+
+    🔹 Eventos de Teclado:<br> <br>
+    keydown      → quando uma tecla é pressionada <br>
+    keyup        → quando uma tecla é solta <br> <br>
+
+    🔹 Eventos de Formulário:  <br><br> 
+    submit       → quando um formulário é enviado <br>
+    change       → quando o valor de um input muda (ex: select) <br>
+    input        → quando o usuário digita (tempo real)<br>
+    focus        → quando o campo ganha foco<br>
+    blur         → quando o campo perde foco<br><br>
+
+    🔹 Eventos de Página:<br><br>
+    DOMContentLoaded → quando o HTML é carregado (sem esperar imagens)<br>
+    load         → quando toda a página é carregada (inclui imagens)<br>
+    scroll       → quando a página é rolada<br>
+    resize       → quando a janela muda de tamanho<br><br>
+
+    💡 Esses são os eventos mais usados ao interagir com botões, inputs,    teclado e a página.
+
+    </p>
+
+    
+</body>
+</html>

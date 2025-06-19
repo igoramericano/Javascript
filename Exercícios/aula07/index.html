@@ -8,14 +8,14 @@
 <body>
 <ol>
     <h1>🧮 Operadores em JavaScript</h1>
-        <div>
+    <div>
             <strong>Aritméticos:</strong>
             <ul>
                 <li>+ (adição), - (subtração), * (multiplicação), / (divisão), % (módulo)</li>
                 <li>** (exponenciação), ++ (incremento), -- (decremento)
             </ul>
-        </div>
-        <script>
+    </div>
+    <script>
             // Exemplos de operadores aritméticos
     
           let a = 10;
@@ -35,18 +35,19 @@
     
           x--; // mesmo que x = x - 1
           console.log("Decremento: " + x); // 5
-        </script>
-    
-    
-        <div>
+    </script>
+
+
+    <div>
             <strong>Atribuição:</strong>
             <ul>
                 <li>= (atribuição simples)</li>
                 <li>+=, -=, *=, /=, %= (atribuição com operação)</li>
                 <li>Ex: x += 2 é o mesmo que x = x + 2</li>
             </ul>
-        </div>
-        <script>
+    
+    </div>
+    <script>
           let x = 10;
     
           console.log("Valor inicial: " + x); // 10
@@ -68,17 +69,17 @@
     
           x **= 3; // x = x ** 3
           console.log("Após **= 3: " + x); // 8
-        </script>
-    
-        <div>
+    </script>
+
+    <div>
             <strong>Relacionais:</strong>
                 <ul>
                     <li>&gt;, &lt;, &gt;=, &lt;=, == (igualdade), != (diferente)</li>
                     <li>=== (igualdade estrita - mesmo valor e tipo)</li>
                     <li>!== (diferença estrita)</li>
                 </ul>
-        </div>
-        <script>
+    </div>
+    <script>
           let a = 10;
           let b = 5;
           let c = "10";
@@ -95,16 +96,30 @@
           // Diferença (com e sem tipo)
           console.log("a != c:", a != c);    // false
           console.log("a !== c:", a !== c);  // true
-        </script>
-        <div>
+    </script>
+    <div>
             <strong>Lógicos:</strong>
                 <ul>
-                    <li>&amp;&amp; (E): true se ambas condições forem verdadeiras</li>
-                    <li>|| (OU): true se pelo menos uma condição for verdadeira</li>
                     <li>! (NÃO): inverte o valor lógico</li>
+                    <li>|| (OU): true se pelo menos uma condição for verdadeira</li>
+                    <li>&amp;&amp; (E): true se ambas condições forem verdadeiras</li>
                 </ul>
-        </div>
-            <script>
+                <strong>Conjunção</strong>
+                <ul>
+                    <li>True + True = True</li>
+                    <li>True + False = false</li>
+                    <li>False + true = False</li>
+                    <li>False + False = False</li>
+                </ul>
+                <Strong>Disjunção</Strong>
+                <ul>
+                    <li>True + True = True</li>
+                    <li>True + False = True</li>
+                    <li>False + true = True</li>
+                    <li>False + False = False</li>
+                </ul>
+    </div>
+    <script>
           let idade = 20;
           let temCarteira = true;
           let dormiuBem = false;
@@ -123,15 +138,15 @@
           let admin = false;
     
           console.log("Tem acesso ao painel?", logado && admin); // false
-        </script>
-        <li>
+    </script>
+    <div>
             <strong>Ternário:</strong>
             <ul>
                 <li>Sintaxe: condição ? valor1 : valor2</li>
                 <li>Exemplo: idade &gt;= 18 ? "Adulto" : "Menor"</li>
             </ul>
-        </li>
-        <script>
+    </div>
+    <script>
          let idade = 17;
     
          // Operador ternário: condição ? valorSeVerdadeiro : valorSeFalso
@@ -150,18 +165,16 @@
          let mensagem = logado ? "Bem-vindo!" : "Faça login.";
     
          console.log(mensagem); // Faça login.
-        </script>
-        Incrementadores em JavaScript:
-    
-      ++ (incremento) e -- (decremento) aumentam ou diminuem o valor em 1.
-    
-      Pós-incremento (x++): usa o valor atual, depois incrementa.
-      Pré-incremento (++x): incrementa primeiro, depois usa o valor.
-    
-      Pós-decremento (x--): usa o valor atual, depois decrementa.
-      Pré-decremento (--x): decrementa primeiro, depois usa o valor.
-    
-        <script>
+    </script>
+    <strong>Incrementadores em JavaScript:</strong>
+    <ul>
+            <li>++ (incremento) e -- (decremento) aumentam ou diminuem o valor em 1.</li>
+            <li>Pós-incremento (x++): usa o valor atual, depois incrementa.</li>
+            <li>Pré-incremento (++x): incrementa primeiro, depois usa o valor.</li>
+            <li>Pós-decremento (x--): usa o valor atual, depois decrementa.</li>
+            <li>Pré-decremento (--x): decrementa primeiro, depois usa o valor.</li>
+    </ul>
+    <script>
           let num = 10;
     
           console.log("Inicial:", num);         // 10
@@ -177,6 +190,6 @@
     
           console.log("Pré-decremento:", --num);  // 10 (diminui antes de usar)
           console.log("Após pré-decremento:", num); // 10
-        </script>
+    </script>
 </ol>
 </html>

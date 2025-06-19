@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JavaScript</title>
+</head>
+<body>
+    <h1>Insira sua idade</h1>
+    <button onclick="verificarIdade()">Verificar Idade</button>
+    <script>
+    function verificarIdade() {
+      let idade = prompt('Digite sua idade:');
+
+      
+      idade = Number(idade);
+
+      if (idade >= 18) {
+        alert("Maior de idade");
+      } else if (idade >= 16) {
+        alert("Pode votar, mas não dirigir");
+      } else {
+        alert("Menor de idade");
+      }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Insira abaixo seu país de nascimento:</p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" onclick="verificarNacionalidade()">
+    <div id="resultado"></div>
+
+    <script>
+        function verificarNacionalidade() {
+            
+            // Seleciona o campo de input pelo ID e obtém o seu valor
+            var paisInput = document.getElementById('pais');
+            var pais = paisInput.value;
+            var resultadoDiv = document.getElementById('resultado');
+
+            // Exibe o país inserido no console
+            console.log(`Vivendo em ${pais}`);
+
+            // Verifica se o país é 'Brasil' (ignorando maiúsculas/minúsculas)
+            if (pais.toLowerCase() === 'brasil') { 
+
+                resultadoDiv.innerHTML = '<p><strong>Você é Brasileiro!</strong></p>';
+                console.log('Você é Brasileiro');
+
+            } else {
+                resultadoDiv.innerHTML = '<p><strong>Você é Estrangeiro!</strong></p>';
+                console.log('Você é Estrangeiro');
+            }
+        }
+    </script>
+</body>
+</html>
