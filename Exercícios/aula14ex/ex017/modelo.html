@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div>
+            <p>Numero: <input type="number" name="num" id="txtn"> <input type="button" value="Gerar tabuada" onclick="tabuada()"></p>
+
+        </div>
+        <div>
+            <select name="tabuada" id="seltab" size="10">
+                
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoEmVideo</p>
+    </footer>
+    <script src="script.js"></script> <!--assim usa script externo-->
+
+    <script>
+        function tabuada() {
+            let num = document.getElementById('txtn')
+            let tab = document.getElementById('seltab')
+        if(num.value.length == 0){
+            window.alert('Por favor, digite um número!')
+        } else {
+            let n = Number(num.value)
+            let c = 1 
+            tab.innerHTML = ''
+            /*essa declaração serve para limpar o campo, ao trocar o número, ou seja, ele recebe um valor em branco antes de receber o próximo valor inseriro pelo cliente*/
+            while (c <= 10) {
+                let item = document.createElement('option')
+                item.text = `${n} x ${c} = ${n*c}`
+                item.value = `tab ${c}`
+                tab.appendChild(item)
+                c++
+            }
+        }
+    }
+
+    </script>
+</body>
+</html>
