@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resumão</title>
+</head>
+<body>
+    <h1>Nossa Rota de Programação</h1>
+
+    <h2>1. Fundamentos</h2>
+    <p>
+        É a base de tudo, o "alfabeto" da programação. Antes de escrever frases complexas, você precisa entender as letras e as regras de pontuação.
+    </p>
+    <p>
+        <strong>O que é:</strong> A sintaxe básica da linguagem, como escrever comentários, a diferença entre letras maiúsculas e minúsculas (case-sensitivity), e como o computador lê o seu código (de cima para baixo).
+    </p>
+    <p>
+        <strong>Analogia:</strong> Aprender o alfabeto, os números e as regras básicas de gramática de um novo idioma.
+    </p>
+
+    <h2>2. Variáveis e Dados</h2>
+    <p>
+        Se programas manipulam informações, as variáveis são os potes onde guardamos essas informações para usar depois.
+    </p>
+    <p>
+        <strong>O que são:</strong> Variáveis são "caixas" com etiquetas (nomes) que armazenam Dados. Os principais tipos de dados (dados primitivos) são:
+    </p>
+    <ul>
+        <li><strong>String:</strong> Texto (ex: "Olá, mundo!").</li>
+        <li><strong>Number:</strong> Números, sejam inteiros ou com vírgula (ex: 25, 3.14).</li>
+        <li><strong>Boolean:</strong> Um valor de verdadeiro ou falso (true ou false).</li>
+    </ul>
+    <p>
+        <strong>Exemplo:</strong> <code>let idade = 25;</code> cria uma caixa chamada idade e guarda o número 25 dentro dela.
+    </p>
+
+    <h2>3. Operadores</h2>
+    <p>
+        São os símbolos que usamos para fazer "coisas" com nossas variáveis e dados, como contas de matemática ou comparações.
+    </p>
+    <p>
+        <strong>O que são:</strong>
+    </p>
+    <ul>
+        <li><strong>Aritméticos:</strong> Para fazer contas (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>).</li>
+        <li><strong>De Comparação:</strong> Para comparar valores (<code>==</code> igual, <code>!=</code> diferente, <code>&gt;</code> maior que, <code>&lt;</code> menor que). O resultado é sempre um Boolean (<code>true</code> ou <code>false</code>).</li>
+        <li><strong>Lógicos:</strong> Para combinar expressões de verdadeiro ou falso (<code>&&</code> E, <code>||</code> OU, <code>!</code> NÃO).</li>
+    </ul>
+    <p>
+        <strong>Exemplo:</strong> <code>if (idade &gt;= 18 &amp;&amp; temHabilitacao == true)</code> usa operadores de comparação (<code>&gt;=</code>) e lógico (<code>&amp;&amp;</code>).
+    </p>
+
+    <h2>4. Condições</h2>
+    <p>
+        São as "bifurcações" no nosso código. Permitem que o programa tome decisões e execute caminhos diferentes dependendo da situação.
+    </p>
+    <p>
+        <strong>O que são:</strong> O bloco <code>if / else</code> (Se / Senão). "SE (if) uma condição for verdadeira, faça isto. SENÃO (else), faça aquilo."
+    </p>
+    <p>
+        <strong>Analogia:</strong> Um GPS que diz: "Se houver trânsito na avenida principal, então vire à direita, senão, siga em frente."
+    </p>
+
+    <h2>5. Repetições (Laços ou Loops)</h2>
+    <p>
+        Permitem executar o mesmo bloco de código várias vezes, sem precisar escrevê-lo de novo e de novo. Essencial para automatizar tarefas.
+    </p>
+    <p>
+        <strong>O que são:</strong> Os comandos <code>for</code> e <code>while</code>.
+    </p>
+    <ul>
+        <li><strong>for:</strong> Usado quando você sabe quantas vezes quer repetir algo. ("Repita 10 vezes").</li>
+        <li><strong>while:</strong> Usado quando você quer repetir algo enquanto uma condição for verdadeira. ("Repita enquanto a porta estiver fechada").</li>
+    </ul>
+    <p>
+        <strong>Exemplo:</strong> Para mostrar os números de 1 a 5, em vez de 5 <code>console.log</code>, você usa um <code>for</code>.
+    </p>
+
+    <h2>6. Arrays (Vetores)</h2>
+    <p>
+        Em vez de criar uma variável para cada item, você pode criar uma "lista" de itens e guardar tudo numa variável só.
+    </p>
+    <p>
+        <strong>O que é:</strong> Uma coleção ordenada de valores. Pense numa estante com prateleiras numeradas (a partir do 0).
+    </p>
+    <p>
+        <strong>Exemplo:</strong> <code>let listaDeCompras = ["maçã", "banana", "leite"];</code>. Para pegar o primeiro item, usamos <code>listaDeCompras[0]</code>.
+    </p>
+
+    <h2>7. Functions (Funções)</h2>
+    <p>
+        São blocos de código reutilizáveis que realizam uma tarefa específica. São a principal forma de organizar e estruturar um programa.
+    </p>
+    <p>
+        <strong>O que são:</strong> Uma "receita" de código que você nomeia e pode "chamar" (executar) sempre que precisar. Elas podem receber dados (parâmetros) e retornar um resultado (<code>return</code>).
+    </p>
+    <p>
+        <strong>Analogia:</strong> Uma máquina de café. Você coloca os "ingredientes" (pó de café e água) como parâmetros, a máquina (função) faz seu trabalho, e te entrega o "resultado" (o café pronto).
+    </p>
+
+    <h2>8. DOM (Document Object Model)</h2>
+    <p>
+        Essa é a ponte que conecta o seu JavaScript com o HTML da sua página. É o que permite que seu código "converse" com a página e a modifique.
+    </p>
+    <p>
+        <strong>O que é:</strong> Uma representação em formato de "árvore" de todos os elementos do seu HTML. O JavaScript pode usar o DOM para encontrar, alterar, adicionar ou remover qualquer elemento e seu conteúdo.
+    </p>
+    <p>
+        <strong>Exemplo:</strong> <code>document.querySelector('button')</code> usa o DOM para encontrar um botão no HTML. <code>elemento.innerHTML = "Novo Texto"</code> usa o DOM para mudar o que está escrito dentro de um elemento.
+    </p>
+
+    <h2>Juntando Tudo</h2>
+    <p>
+        Imagine o seu projeto "Analisador de Números":
+    </p>
+    <p>
+        Você usa o DOM para pegar o que o usuário digita no input. Com Operadores e Condições, você verifica se o número é válido. Se for, você o armazena em um Array (uma Variável especial). Tudo isso é organizado dentro de uma Função <code>adicionar()</code>, que é chamada quando o usuário clica no botão. Se você quisesse exibir todos os números do array na tela, usaria um laço de Repetição para percorrer o array e o DOM para criar e exibir cada item na página.
+    </p>
+</body>
+</body>
+</html>
